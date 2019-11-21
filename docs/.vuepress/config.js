@@ -16,7 +16,7 @@ module.exports = {
         items: [
           { text: "文章", link: "/pages/folder1/interview.md" },
           //点击标签会跳转至link的markdown文件生成的页面
-          { text: "琐碎", link: "/pages/folder2/test4.md" }
+          { text: "琐碎", link: "/pages/folder2/work.md" }
         ]
       },
       { text: "功能演示", link: "/pages/folder1/test3.md" },
@@ -32,7 +32,7 @@ module.exports = {
           children: [
             ["interview.md", "宝典"], // 菜单名称为‘子菜单1’，跳转至/pages/folder1/interview.md
             ["array.md", "数组"],
-            ["question.md", "开发问题"],
+            ["question.md", "开发问题"]
           ]
         },
         {
@@ -44,8 +44,30 @@ module.exports = {
           title: "css开发技巧",
           collapsable: true,
           children: [["css.md", "css"]]
+        },
+        {
+          title: "Git常用命令",
+          collapsable: true,
+          children: [["git.md", "git"]]
+        },
+        {
+          title: "转正答辩",
+          collapsable: true,
+          children: [["review.md", "review"]]
+        },
+        {
+          title: "节流与防抖",
+          collapsable: true,
+          children: [["optimize.md", "节流与防抖"]]
+        }
+      ],
+      "/pages/folder2/": [
+        {
+          title: "工作资料汇总",
+          collapsable: true,
+          children: [["work.md", "work"]]
         }
       ]
     }
-  },
+  }
 };

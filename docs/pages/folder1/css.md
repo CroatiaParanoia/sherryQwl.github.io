@@ -1,8 +1,8 @@
-## 1、writing-mode调整文本排版方向；
-## 2、text-align-last:justify设置文本两端对齐
+## writing-mode调整文本排版方向；
+## text-align-last:justify设置文本两端对齐
 
 ``` css
-// 通过object-fit使图像脱离background-size的约束，使用<img>来标记图像背景尺寸
+ /* 通过object-fit使图像脱离background-size的约束，使用<img>来标记图像背景尺寸 */
 img {
     width: 100%;
     height: 260px;
@@ -20,7 +20,7 @@ img {
     }
 }
 ```
-## 3、使用transform描绘1px边框
+## 使用transform描绘1px边框
 通过::before或::after和transform模拟细腻的1px边框
 ```css
 .thin {
@@ -38,7 +38,7 @@ img {
 	}
 }
 ```
-## 4、letter-spacing设置负值字体间距将文本倒序
+## letter-spacing设置负值字体间距将文本倒序
 ``` css
 .reverse-text {
 	font-weight: bold;
@@ -48,7 +48,7 @@ img {
 }
 ```
 
-## 5、移动端使用 rem 单位适配
+## 移动端使用 rem 单位适配
 ``` js
 // 屏幕适配（ window.screen.width / 移动端设计稿宽 * 100）也即是 (window.screen.width / 750 * 100)  ——*100 为了方便计算。即 font-size 值是手机 deviceWidth 与设计稿比值的 100 倍
 document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 7.5 + 'px';
@@ -69,7 +69,7 @@ heigth: 2.5rem; // 250 / 100 rem
 ```
 如果你的移动端的设计稿是以宽为 1080 px 来设置的话，就用 window.screen.width / 10.8 吧。
 
-###  Chrome不能显示小于12px的字体的解决办法，同时解决-webkit-transform:
+### Chrome不能显示小于12px的字体的解决办法，同时解决-webkit-transform:
 ``` css
  scale不支持行内标签的问题
 /* 10px字号 */
