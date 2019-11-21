@@ -8,8 +8,44 @@ module.exports = {
     //   顶部导航栏
     nav: [
       // 格式一：直接跳转，'/'为不添加路由，跳转到首页
-      { text: "首页", link: "/" }
+      { text: "首页", link: "/" },
       // 格式二：添加下拉菜单，link指向的文件路径
-    ]
-  }
+      {
+        text: "分类", //默认显示
+        ariaLabel: "分类", //用于识别的label
+        items: [
+          { text: "文章", link: "/pages/folder1/interview.md" },
+          //点击标签会跳转至link的markdown文件生成的页面
+          { text: "琐碎", link: "/pages/folder2/test4.md" }
+        ]
+      },
+      { text: "功能演示", link: "/pages/folder1/test3.md" },
+      { text: "Github", link: "https://github.com/sherryQwl" }
+    ],
+    // 侧边栏导航：会根据当前的文件路径是否匹配侧边栏数据，自动显示/隐藏
+    sidebar: {
+      "/pages/folder1/": [
+        {
+          title: "面试汇总", // 一级菜单名称
+          collapsable: true, // false为默认展开菜单，默认值true是折叠
+          sidebarDepth: 1, //设置侧边导航自动提取markdown文件标题的层级，默认1为h2层级
+          children: [
+            ["interview.md", "宝典"], // 菜单名称为‘子菜单1’，跳转至/pages/folder1/interview.md
+            ["array.md", "数组"],
+            ["question.md", "开发问题"],
+          ]
+        },
+        {
+          title: "vue理解",
+          collapsable: true,
+          children: [["vue.md", "vue"]]
+        },
+        {
+          title: "css开发技巧",
+          collapsable: true,
+          children: [["css.md", "css"]]
+        }
+      ]
+    }
+  },
 };
