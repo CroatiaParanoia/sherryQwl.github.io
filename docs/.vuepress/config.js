@@ -59,6 +59,11 @@ module.exports = {
           title: "节流与防抖",
           collapsable: true,
           children: [["optimize.md", "节流与防抖"]]
+        },
+        {
+          title: "angular",
+          collapsable: true,
+          children: [["angular.md", "angular"]]
         }
       ],
       "/pages/folder2/": [
