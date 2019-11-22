@@ -79,3 +79,6 @@ heigth: 2.5rem; // 250 / 100 rem
   -webkit-transform:scale(0.9);
 }
 ```
+
+### 最全的 “文本溢出截断省略” 方案合集
+[最全的 “文本溢出截断省略” 方案合集](https://juejin.im/post/5dc15b35f265da4d432a3d10)

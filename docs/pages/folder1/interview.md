@@ -77,3 +77,21 @@
 
 ### 26、前端技术漫游指南
 [前端技术漫游指南](http://qingbob.com/tags/)
+
+### 27、前端Vue中常用rules校验规则
+[前端Vue中常用rules校验规则](https://juejin.im/post/5dccdd24f265da0c09156fb3#heading-25)
+
+### 28、各类源码实现
+[28、各类源码实现](https://juejin.im/post/5dc3894051882517a652dbd7)
+
+### 29、检验自己是否真的熟悉JavaScript(需要精读)
+[检验自己是否真的熟悉JavaScript](https://juejin.im/post/5dbebbfa51882524c507fddb)
+
+### 30、ES6全部特性
+[ES6全部特性](https://juejin.im/post/5d9bf530518825427b27639d)
+
+### 31、JS 原生面经
+[JS 原生面经](https://juejin.im/post/5daeefc8e51d4524f007fb15#heading-1)
+
+### 32、9个项目助你在2020年成为前端大神
+[9个项目助你在2020年成为前端大神](https://juejin.im/post/5dc0c744e51d456e7e41f5ac)
